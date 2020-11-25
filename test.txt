@@ -14,9 +14,8 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: bharnaya/angular-app
-        ports: 
-        - containerPort: 80 
+        image: us.icr.io/corda-ui/angular-app
+
 --- 
 
 kind: Service 
@@ -28,7 +27,5 @@ spec:
     app: angular 
   ports: 
   - protocol: TCP 
-    port: 80 
-    targetPort: 80 
-    nodePort: 31000 
+    port: 5000
   type: NodePort
