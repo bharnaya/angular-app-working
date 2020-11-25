@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: us.icr.io/corda-ui/angular-app
+        image: bharnaya/angular-app
         ports: 
         - containerPort: 80 
 --- 
